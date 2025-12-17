@@ -1,8 +1,8 @@
 ﻿/* ===== CSS ПЕРЕМЕННЫЕ ===== */
 :root {
     /* Цветовая палитра */
-    --primary-color: #f8f9fa;
-    --secondary-color: #f8961e;
+    --primary-color: #ffffff;
+    --secondary-color: #ffffff;
     --accent-color: #f72585;
     --light-color: #f8f9fa;
     --dark-color: #212529;
@@ -62,4 +62,5 @@ h1 {
 h2 {
     font-size: 2rem;
     border
+
 
