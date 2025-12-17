@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | Мой Первый Сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Логотип сайта" class="logo">
+            <h1>Мой Первый Сайтик</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="services.html" class="active">Услуги</a></li>
+                <li><a href="gallery.html">ГалЭрЭя</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Мои услуги</h2>
+        <p class="page-description">Допустим, я могу предложить:</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Веб-разработка</h3>
+                <ul class="service-features">
+                    <li>Смешные сайты</li>
+                    <li>Плохой и неразумный код</li>
+                    <li>Забавные картинки из советских фильмов</li>
+                    <li>Раззадорю любого</li>
+                </ul>
+                <div class="service-price">от 15 000 ₽</div>
+                <button class="service-btn" data-service="Веб-разработка">Выбрать</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Рисуночки</h3>
+                <ul class="service-features">
+                    <li>Карандашиком</li>
+                    <li>Могу снатуры</li>
+                    <li>Если хотите, на тетрадном листочке</li>
+                    <li>или клочке бумаги</li>
+                </ul>
+                <div class="service-price">от 8 000 ₽</div>
+                <button class="service-btn" data-service="Рисуночки">Выбрать</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Моральная поддержка</h3>
+                <ul class="service-features">
+                    <li>Пришлю фото своих хвостиков</li>
+                    <li>Спою колыбельную</li>
+                    <li>Рассмешу шутками</li>
+                    <li>Напою чаем</li>
+                </ul>
+                <div class="service-price">от 5 000 ₽/мес</div>
+                <button class="service-btn" data-service="Моральная поддержка">Выбрать</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Сеансы музыки</h3>
+                <ul class="service-features">
+                    <li>Научу петь оперу</li>
+                    <li>Можно и не оперу</li>
+                    <li>Сыграете как джими хендрикс</li>
+                    <li>Или станете лучше нильса на флейте</li>
+                </ul>
+                <div class="service-price">от 12 000 ₽</div>
+                <button class="service-btn" data-service="Сеансы музыки">Выбрать</button>
+            </div>
+        </div>
+
+        <section class="order-section">
+            <h3>Ну, что решил?</h3>
+            <div id="selectedServices" class="selected-services">
+                <p>Давай, выбирай!</p>
+            </div>
+            <button id="clearSelection" class="reset-btn">Очисти выбор</button>
+            <button id="calculateTotal" class="action-btn">Рассчитай стоимость</button>
+            <div id="totalPrice" class="total-price"></div>
+        </section>
+
+        <section class="process-section">
+            <h3>Как я работаю</h3>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Консультация</h4>
+                    <p>Обсуждаем ваши цели и количество выплаканных слез</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Успокоение</h4>
+                    <p>Сохраним нервные клетки</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Посиделки</h4>
+                    <p>Сидим под пледом и болтаем</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>И, наконец ....</h4>
+                    <p>Вы - счастливый человек!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Страницы</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: jujuju@email.com</p>
+                <p>Telegram: @juliawaters</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Мой Первый Сайт. Все услуги предоставляются мной</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

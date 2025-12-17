@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Мой Первый Сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Логотип сайта" class="logo">
+            <h1>Мой Первый Сайт</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="gallery.html" class="active">ГалЭрЭя</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Галерея ФОТОЧЕК С КОТИКАМИ</h2>
+        <p class="page-description">котикикотикикотики</p>
+
+        <div class="gallery-controls">
+            <button id="showAll" class="filter-btn active">Все</button>
+            <button id="filterNature" class="filter-btn" data-filter="nature">Миська</button>
+            <button id="filterTech" class="filter-btn" data-filter="tech">Кнопка</button>
+            <button id="filterAbstract" class="filter-btn" data-filter="abstract">Барсик</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Изображение 1 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="image-placeholder nature">
+                    <p>🏞️ Миська</p>
+                    <p>Хороший мальчик!</p>
+                </div>
+                <div class="image-info">
+                    <h3>Милые глазки</h3>
+                    <p>Длинный хвост</p>
+                    <button class="view-btn" data-image="1">Просмотр</button>
+                </div>
+            </div>
+
+            <!-- Изображение 2 -->
+            <div class="gallery-item" data-category="tech">
+                <div class="image-placeholder tech">
+                    <p>Кнопка</p>
+                    <p>Пугливая девочка</p>
+                </div>
+                <div class="image-info">
+                    <h3>Шерсть как у андатры</h3>
+                    <p>Немного с психическими отклонениями</p>
+                    <button class="view-btn" data-image="2">Просмотр</button>
+                </div>
+            </div>
+
+            <!-- Изображение 3 -->
+            <div class="gallery-item" data-category="abstract">
+                <div class="image-placeholder abstract">
+                    <p>Барсик</p>
+                    <p>противный барин!</p>
+                </div>
+                <div class="image-info">
+                    <h3>Очень самодовольный</h3>
+                    <p>И уже старенький</p>
+                    <button class="view-btn" data-image="3">Просмотр</button>
+                </div>
+            </div>
+
+          
+        <!-- Модальное окно для просмотра изображения -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modalImage" class="modal-image-placeholder">
+                    <!-- Здесь будет выбранное изображение -->
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div class="modal-actions">
+                        <button id="prevBtn">← Назад</button>
+                        <button id="nextBtn">Вперед →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="upload-section">
+            <h3>Добавьте свое изображение</h3>
+            <div class="upload-container">
+                <div class="upload-area" id="dropArea">
+                    <p>Перетащите изображение сюда</p>
+                    <p class="upload-hint">или</p>
+                    <input type="file" id="imageUpload" accept="image/*">
+                    <label for="imageUpload" class="upload-btn">Выбрать файл</label>
+                </div>
+                <div id="previewContainer" class="preview-container"></div>
+            </div>
+            <div id="uploadStatus" class="upload-status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Галерея</h3>
+                <p>Демонстрация работы с изображениями</p>
+            </div>
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="gallery.html">ГалЭрЭя</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Мой Первый Сайт. Галерея для демонстрации.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
