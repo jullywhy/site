@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,66 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для галереи */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .image-info h3 {
+            margin: 10px 0 5px 0;
+            color: #333;
+        }
+        
+        .image-info p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .image-category {
+            display: inline-block;
+            background: #4361ee;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +79,7 @@
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">Обо мне</a></li>
                 <li><a href="services.html">Услуги</a></li>
-                <li><a href="gallery.html" class="active">ГалЭрЭя</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
@@ -31,40 +91,36 @@
 
         <div class="gallery-grid">
             <!-- Изображение 1 -->
-             <img src="images/mys.jpg" alt="Мись" width: 300 px >
-                <div class="image-placeholder nature">
-                    <p>🏞️ Миська</p>
-                    <p>Хороший мальчик!</p>
-                </div>
+            <div class="gallery-item">
+                <img src="images/mys.jpg" alt="Мись" class="gallery-image">
                 <div class="image-info">
+                    <span class="image-category">Миська</span>
                     <h3>Милые глазки</h3>
-                    <p>Длинный хвост</p>
+                    <p>Хороший мальчик! Длинный хвост</p>
                 </div>
             </div>
 
             <!-- Изображение 2 -->
-            <div class="gallery-item" data-category="tech">
-                <div class="image-placeholder tech">
-                    <p>Кнопка</p>
-                    <p>Пугливая девочка</p>
-                </div>
-                 <img src="images/nepa.png" alt="кнопка" width: 300 px>
-                    <h3>Шерсть как у андатры</h3>
-                    <p>Немного с психическими отклонениями</p>
+            <div class="gallery-item">
+                <img src="images/nepa.png" alt="Кнопка" class="gallery-image">
+                <div class="image-info">
+                    <span class="image-category">Кнопка</span>
+                    <h3>Шерсть как у ондатры</h3>
+                    <p>Пугливая девочка. Немного с психическими отклонениями</p>
                 </div>
             </div>
 
             <!-- Изображение 3 -->
-            <div class="gallery-item" data-category="abstract">
-               <img src="images/bars.jpg" alt="барсик"  width: 300 px>
-                    <p>Барсик</p>
-                    <p>противный барин!</p>
-                </div>
+            <div class="gallery-item">
+                <img src="images/bars.jpg" alt="Барсик" class="gallery-image">
                 <div class="image-info">
+                    <span class="image-category">Барсик</span>
                     <h3>Очень самодовольный</h3>
-                    <p>И уже старенький</p>
+                    <p>Противный барин! И уже старенький</p>
                 </div>
             </div>
+            
+            <!-- Добавьте больше изображений по тому же шаблону -->
         </div>
     </main>
 
@@ -74,7 +130,7 @@
                 <h3>Навигация</h3>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="gallery.html">ГалЭрЭя</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
@@ -83,6 +139,6 @@
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
+
 
