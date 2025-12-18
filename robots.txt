@@ -1,0 +1,12 @@
+# Файл robots.txt для моего сайта
+# Создано: [15.12.2025]
+# Сайт: https://jullywhy.github.io/site/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /backup/
+
+Sitemap: https://jullywhy.github.io/site/sitemap.xml
