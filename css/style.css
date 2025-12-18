@@ -41,7 +41,7 @@ nav a {
 
 /* Основной контент */
 main {
-    max-width: 1200px;
+    max-width: 250px;
     margin: 30px auto;
     padding: 20px;
     background: white;
@@ -56,7 +56,7 @@ h1 {
 
 .main-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
     display: block;
     margin: 20px auto;
@@ -87,3 +87,4 @@ footer {
     color: white;
     margin-top: 30px;
 }
+
